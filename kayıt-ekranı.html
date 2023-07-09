@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stillerim.css">
+        <title>Üye Kayıt Formu</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{
+                font-size:10px;
+                font-family:Trebuchet MS;
+                background:linear-gradient(-45deg, #ee7752 , #792bb9, #e73c7e, #23a6d5, #ac70d4, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                height: 100vh;
+            }
+            input, button{
+                border:none;
+                width:300px;
+                height:50px;
+                margin:20px 0px 20px 0px;
+                background:rgba(240,240,240,.5);
+                padding-left:15px; 
+
+            }
+            @keyframes gradient{
+                0%{background-position: 0% 50%;}
+                50%{background-position: 100% 50%;}
+                100%{background-position: 0% 50%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kayitFormu">
+            <form action="#" method="get">
+                <h3 class="kayit-baslik">Üye Kayıt Formu</h3>
+                <input type="text" name="adsoyad" id="adsoyad" placeholder="Ad soyad giriniz:"/>
+                <input type="text" name="eposta" id="eposta" placeholder="E-mail adresi giriniz:"/>
+                <input type="text" name="kullaniciadi" id="kullaniciadi" placeholder="Kullanıcı adı oluşturunuz:" /> 
+                <input type="password" name="sifre1" id="sifre1" placeholder="Şifre oluşturunuz:" "/>  
+                <input type="password" name="sifre2" id="sifre2" placeholder="Şifrenizi tekrar giriniz:" "/>  
+                <input class="kayit-btn" type="submit" value="KAYIT OL" onclick="kontrol()"/>
+            </form>
+            
+        </div>
+    
+    
+    </body>
+</html>
